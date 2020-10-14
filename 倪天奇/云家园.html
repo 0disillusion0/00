@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css">
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+
+        }
+        body {
+            background-image: url(images/bg1.jpeg);
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            background-size: 100% 100%;
+            background-attachment:fixed;
+        }
+        .container {
+            background-color: #FFFFFF;
+            width: 467px;
+            height: 732px;
+            margin: 40px auto 0;
+            border-radius: 17px;
+            ;
+        }
+        .picture1{
+            background-image: url(images/pc1.jpg);
+            background-repeat: no-repeat;
+            
+        }
+        .header {
+            text-align: center;
+            padding-top: 28px;
+        }
+        .character{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            color:#666666;
+            padding-left: 17px;
+            padding-top: 10px;
+            font-size: 14px;
+        }
+        .input{
+            display: block;
+            width: 397px;
+            height: 20px;
+            padding:6px 12px;
+            margin-left: 14px;
+            margin-top: 9px;
+            border-radius: 4px;
+            color: #666666;
+            border:solid 1px;
+            background-image
+        }
+        .checkbox{
+            margin: 25px 0px 0px 16px;
+            
+        }
+        .next{
+            display: inline-block;
+        }
+        .character2{
+            font-weight: 300;
+            color: #666666;
+            font-size: 14px;
+        }
+        .a2{
+            text-decoration: none;
+            padding-left: 249px;
+            
+        }
+        .login,.register{
+            width: 397px;
+            height: 46px;
+            background-color: #508BCB;
+            margin-left: 26px;
+            margin-top: 10px;
+            border-radius: 6px;
+            border: 0px;
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 20px;
+            cursor: pointer;
+            
+        }
+        .login:hover
+        {
+            background-color: #3D71AA;
+        }
+        .register:hover
+        {
+            background-color: #3D71AA;
+        }
+        .footer{
+            width: 440px;
+            height: 160px;
+            margin-left: 17px;
+            margin-top: 15px;
+            background-color:#FBF8E3;
+            border-radius: 6px;
+        }
+        .footer>p{
+            height: 28px;
+            margin-left: 14px;
+            color: #876D3A;
+            
+        }
+        .buttom{
+            width: 150px;
+            height: 30px;
+            text-decoration: none;
+            margin-left: 40px;
+            border-radius: 5px;
+            display: inline-block;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            font-size: 14px;
+        }
+        .last{
+            margin-left: 15px;
+            margin-top: 67px;
+            font-size: 14px;
+        }
+        .closebutton{
+                margin-left: 419px;
+                cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="header">
+           <img src="images/pc1.jpg" alt="">
+            <h3 style="display: inline-block; font-weight: 300;color: #508BCB;font-size: 26px;">云家园</h3>
+            <small>信息服务平台</small>
+       </div>
+       <div><p class="character">帐号</p></div>
+       <input type="text" placeholder="请输入学号/工资号" class="input">     
+        <div>
+            <p class="character" style="margin-top: 10px;">密码</p>
+        </div>
+        <input type="text" placeholder="密码" class="input">
+        <div>
+            <label for="autologin" class="character2">
+            <input type="checkbox" checked="checked" class="checkbox" id="autologin">下次自动登录
+            </label>
+            <a href="https://www.ncuos.com/loginBox/regainPassword" class="a2">忘记密码？</a>
+        </div>
+        <div>
+            <input type="sumit" value="登录" class="login">
+        </div>
+        <div>
+            <input type="submit" value="新生注册" class="register">
+        </div>
+        <div class="footer">
+            <i class="closebutton">×</i>
+            <p >新生(本科)自助报到系统请关注南昌大学家园网微信公众</p>
+            <p>号，了解更多具体新生报道系统流程</p>
+            <p>家园工作室QQ：<a href="http://qm.qq.com/cgi-bin/qm/qr?k=OtyR5Xib0OPbuAtjZtXeyVc5-a6y7zQU">2459289916</a></p>
+            <p>2020南昌大学本科迎新群：<a href="https://qm.qq.com/cgi-bin/qm/qr?k=pCH_WujTSR0gER5lAakD1mbywk5EXK1X&jump_from=webapi"><img src="images/group (1).png" alt=""></a></p>
+            <p>校园APP：<a href="https://incu.ncuos.com/" style="font-size: 14px;">南大家园</a></p>
+        </div>
+        <script>
+            var btn = document.querySelector('.closebutton');
+            var footer = document.querySelector('.footer');
+            btn.onclick=function()
+            {
+                footer.style.display='none';
+            }
+        </script>
+        <div style="margin-top: 30px;">
+            <a href="https://itunes.apple.com/us/app/%E5%8D%97%E5%A4%A7%E5%AE%B6%E5%9B%AD/id1209726561?mt=8" class="buttom" style="background-color: #D05450;">ios版</a>
+            <a href="http://incu-download.ncuos.com/iNCU_latest.apk" class="buttom" style="background-color: #69B758;">Android版</a>
+        </div>
+        <div class="last">
+            <small >下载南大家园手机客户端 <img src="images/hand.jpg" alt=""></small>
+        </div>
+    </div>
+
+
+</body>
+</html>
